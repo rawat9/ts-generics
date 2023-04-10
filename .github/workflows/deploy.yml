@@ -8,6 +8,10 @@ on:
 
 jobs:
   publish:
+    permissions:
+      pages: write
+      id-token: write 
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,14 +28,8 @@ jobs:
           npm install 
           npm run build
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v3.0.5
-
-      - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: build
-
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
