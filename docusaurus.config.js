@@ -10,7 +10,7 @@ const config = {
   favicon: 'img/ts.svg',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/rawat9/ts-generics',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -18,7 +18,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'ts-generics', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -59,12 +59,12 @@ const config = {
       navbar: {
         title: 'ts-generics',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'ts-logo',
           src: 'img/ts.svg',
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/rawat9/ts-generics',
             label: 'GitHub',
             position: 'right',
           },
