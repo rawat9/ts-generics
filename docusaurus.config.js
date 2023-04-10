@@ -11,7 +11,7 @@ const config = {
   title: 'TS Generics',
   favicon: 'img/ts.svg',
   url: `https://${organizationName}.github.io`,
-  baseUrl: '/',
+  baseUrl: `/${projectName}`,
 
   organizationName,
   projectName,
