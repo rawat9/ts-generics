@@ -24,9 +24,14 @@ jobs:
           npm install 
           npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2.0.0
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          build_dir: build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: build
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
