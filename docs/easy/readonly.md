@@ -26,3 +26,25 @@ const todo: MyReadonly<Todo> = {
 todo.title = "Hello" // Error: cannot reassign a readonly property
 todo.description = "barFoo" // Error: cannot reassign a readonly property
 ```
+
+<details>
+  <summary>Solution ✅</summary>
+
+```ts twoslash {6}
+// @errors: 2540
+interface Todo {
+  title: string
+  description: string
+}
+
+type MyReadonly<T> = {readonly [P in keyof T]: T[P]}
+
+const todo: MyReadonly<Todo> = {
+  title: "Hey",
+  description: "foobar"
+}
+
+todo.title = "Hello"
+todo.description = "barFoo"
+```
+</details>
