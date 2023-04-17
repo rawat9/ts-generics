@@ -1,6 +1,9 @@
 {
 	"editor.fontFamily": "Monolisa",
 	"editor.fontSize": 14,
-	"editor.tabSize": 2
+	"editor.tabSize": 2,
+	"github.copilot.enable": {
+		"typescript": false
+	}
   }
   
