@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-tags: [easy, built-in, object-keys]
+tags: [easy, utils]
 ---
 
 # If
