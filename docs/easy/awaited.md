@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-tags: [easy, promise, build-in]
+tags: [easy, promise, built-in]
 ---
 
 # Awaited
